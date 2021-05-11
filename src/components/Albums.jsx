@@ -7,7 +7,7 @@ function Albums(props) {
       {/* <input type="text" placeholder="Search" value={search} onChange={(e) => setSearch(e.target.value)}></input> */}
       <div className="map">
         {Object.keys(props.albums).forEach((key) => /* Checking data.imgURL not equal to test avoids an error with displaying a bad album */
-          <Link key={props[key]} to={`/${props[key]}`} >
+          <Link key={props.albums[key]} to={`/${props.albums[key]}`} >
             {/* eslint-disable-next-line*/}
             <div className="album" key={key} className="mappedAlbums">
               <img key={key} src={key.artworkUrl100} alt={key.collectionName} />
