@@ -14,7 +14,6 @@ function App() {
       setAlbums(res.data);
     }
     getAlbums();
-    console.log(getAlbums);
   }, []);
 
   return (
