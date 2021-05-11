@@ -2,8 +2,6 @@ import React, { /*useState*/ } from 'react';
 import { Link } from 'react-router-dom';
 
 function Albums(props) {
-  /*let albums = JSON.stringify(props.albums);*/
-  console.log('albums: ' + JSON.stringify(props.albums));
   // const [search, setSearch] = useState('');
   return (
     <div>
