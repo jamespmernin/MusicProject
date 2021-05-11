@@ -9,16 +9,17 @@ function App() {
   const [albums, setAlbums] = useState([]); // Easier to change albums using a state
   useEffect(() => {
     const getAlbums = async () => {
-      const apiUrl = 'https://itunes.apple.com/lookup?id=136975&entity=album';
+      const apiUrl = 'https://cors-anywhere.herokuapp.com/https://itunes.apple.com/lookup?id=136975&entity=album';
       const res = await axios(apiUrl);
       setAlbums(res.data);
     }
     getAlbums();
+    console.log(getAlbums);
   }, []);
 
   return (
     <div className="app">
-      <nav>AlbumsApp</nav>
+      <nav>The Beatles Discography</nav>
       <Route exact path="/">
         <Albums albums={albums} />
       </Route>

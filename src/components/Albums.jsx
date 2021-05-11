@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React, { /*useState*/ } from 'react';
 import { Link } from 'react-router-dom';
 
 function Albums(props) {
-  const [search, setSearch] = useState('');
+  // const [search, setSearch] = useState('');
   return (
     <div>
-      <input type="text" placeholder="Search" value={search} onChange={(e) => setSearch(e.target.value)}></input>
+      {/* <input type="text" placeholder="Search" value={search} onChange={(e) => setSearch(e.target.value)}></input> */}
       <div className="map">
-        {props.music.filter(data => data.name.includes(`${search}`) && data.imgURL !== 'test').map((album, i) => /* Checking data.imgURL not equal to test avoids an error with displaying a bad painting */
+        {props.albums.map((album, i) => /* Checking data.imgURL not equal to test avoids an error with displaying a bad painting */
           <Link key={i} to={`/${i}`} >
             {/* eslint-disable-next-line*/}
             <div className="album" key={i} className="mappedAlbums">
