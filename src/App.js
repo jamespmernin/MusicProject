@@ -9,7 +9,7 @@ function App() {
   const [albums, setAlbums] = useState([]); // Easier to change albums using a state
   useEffect(() => {
     const getAlbums = async () => {
-      const apiUrl = 'https://products-api-01.herokuapp.com/api/products';
+      const apiUrl = 'https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/';
       const res = await axios(apiUrl);
       setAlbums(res.data);
     }
