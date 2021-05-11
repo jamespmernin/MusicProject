@@ -15,7 +15,7 @@ function App() {
     }
     getAlbums();
   }, []);
-
+  
   return (
     <div className="app">
       <nav>The Beatles Discography</nav>

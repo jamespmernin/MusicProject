@@ -5,7 +5,7 @@ function AlbumsDetail(props) {
   return (
     <div className="map">
       {
-        props.albums.map((album, i) =>
+        Object.values(props).map((album, i) =>
           <Route key={i} exact path={`/${i}`} > {/* Forming the route conditionally allows for multiple route paths to be produced */}
           m<div key={i} className="mappedAlbums">
               <img className="mappedAlbumData" key={i} src={album.imgURL} alt={album.name} /> {/* Keys are needed to avoid warnings about children that are not unique */}
