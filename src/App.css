@@ -78,7 +78,7 @@ input {
   color: #000000;
 }
 
-.mappedPaintings { 
+.mappedAlbums { 
   margin: 20px;
   box-shadow: 0 0 5px #778899;
   margin-bottom: 50px;
@@ -122,7 +122,7 @@ input {
   margin-top: 0px;
 }
 
-@media (min-width: 1014px){ /* This media query changes the size of the paintings to adapt to a smaller screen */
+@media (min-width: 1014px){ /* This media query changes the size of the albums to adapt to a smaller screen */
 .infoProducts {
   flex-direction: row;
   width: 70vw;

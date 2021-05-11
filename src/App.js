@@ -1,28 +1,28 @@
 import React, { useEffect, useState } from 'react'
 import { Route } from 'react-router-dom'
 import axios from 'axios';
-import Paintings from './components/Paintings'
-import PaintingsDetail from './components/PaintingsDetail'
+import Albums from './components/Albums'
+import AlbumsDetail from './components/AlbumsDetail'
 import './App.css'
 
 function App() {
-  const [paintings, setPaintings] = useState([]); // Easier to change paintings using a state
+  const [albums, setAlbums] = useState([]); // Easier to change albums using a state
   useEffect(() => {
-    const getPaintings = async () => {
+    const getAlbums = async () => {
       const apiUrl = 'https://products-api-01.herokuapp.com/api/products';
       const res = await axios(apiUrl);
-      setPaintings(res.data);
+      setAlbums(res.data);
     }
-    getPaintings();
+    getAlbums();
   }, []);
 
   return (
     <div className="app">
-      <nav>ProductsApp</nav>
+      <nav>AlbumsApp</nav>
       <Route exact path="/">
-        <Paintings paintings={paintings} />
+        <Albums albums={albums} />
       </Route>
-      <PaintingsDetail paintings={paintings} />
+      <AlbumsDetail albums={albums} />
     </div>
   )
 }

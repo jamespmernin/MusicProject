@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-function Paintings(props) {
+function Albums(props) {
   const [search, setSearch] = useState('');
   return (
     <div>
       <input type="text" placeholder="Search" value={search} onChange={(e) => setSearch(e.target.value)}></input>
       <div className="map">
-        {props.paintings.filter(data => data.name.includes(`${search}`) && data.imgURL !== 'test').map((painting, i) => /* Checking data.imgURL not equal to test avoids an error with displaying a bad painting */
+        {props.music.filter(data => data.name.includes(`${search}`) && data.imgURL !== 'test').map((album, i) => /* Checking data.imgURL not equal to test avoids an error with displaying a bad painting */
           <Link key={i} to={`/${i}`} >
             {/* eslint-disable-next-line*/}
-            <div className="painting" key={i} className="mappedPaintings">
-              <img key={i} src={painting.imgURL} alt={painting.name} />
-              <h2 key={painting._id}>{painting.name}</h2>
-              <h3 key={painting.price}>${painting.price}</h3>
+            <div className="album" key={i} className="mappedAlbums">
+              <img key={i} src={album.imgURL} alt={album.name} />
+              <h2 key={album._id}>{album.name}</h2>
+              <h3 key={album.price}>${album.price}</h3>
             </div>
           </Link>
         )
@@ -23,4 +23,4 @@ function Paintings(props) {
   )
 }
 
-export default Paintings;
+export default Albums;
