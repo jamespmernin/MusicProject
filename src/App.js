@@ -15,10 +15,11 @@ function App() {
     }
     getAlbums();
   }, []);
-  
+
   return (
     <div className="app">
       <nav>The Beatles Discography</nav>
+      <h1>albums</h1>
       <Route exact path="/">
         <Albums albums={albums} />
       </Route>
