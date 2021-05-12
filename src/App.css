@@ -103,6 +103,11 @@ input {
   transform: scale(1.1);
 }
 
+.mappedAlbums:touchstart {
+  background-color: #ADD8E6;
+  transform: scale(1.1);
+}
+
 .homeImage {
   height: auto;
   max-width: 310px;
