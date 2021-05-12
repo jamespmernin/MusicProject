@@ -1,5 +1,13 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Discography Project
+
+This project was created to demonstrate my ability to create a React app for my job application to SharpSpring.
+
+I decided to use "The Beatles" as the artist of choice. The page I created includes all albums in the Apple Music library with their name, artist, date of release, and cover art.
+
+I also included functionality where clicking on am album opens the Apple Music page with that album's information in a new tab.
+
 ## Available Scripts
 
 In the project directory, you can run:
