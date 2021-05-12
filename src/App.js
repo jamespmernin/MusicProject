@@ -21,7 +21,7 @@ function App() {
       <nav>Discography Project</nav>
       <h1>Featuring my favorite band: The Beatles</h1>
       <h1>James Mernin</h1>
-      <h4>Instructions: Click anywhere on the album information to be taken to the Apple Music page for that album!</h4>
+      <h4>Clicking on an album will open its page on the Apple Music library in a new tab.</h4>
       <Route exact path="/">
         <Albums albums={albums} />
       </Route>
