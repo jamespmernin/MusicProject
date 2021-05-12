@@ -10,9 +10,10 @@ function Albums(props) {
           <Link key={i} to={`/${i}`} >
             {/* eslint-disable-next-line*/}
             <div className="album" key={i} className="mappedAlbums">
-              <img key={i} src={album.artworkUrl100} alt={album.name} />
-              <h2 key={album._id}>{album.name}</h2>
-              <h3 key={album.price}>{album.price}</h3>
+              <img key={i} src={album.artworkUrl100} alt={album.collectionName} />
+              <h2 key={i}>{album.collectionName}</h2>
+              <h3 key={i}>{album.artistName}</h3>
+              <h3 key={i}>{album.releaseDate.substring(0, 4)}</h3>
             </div>
           </Link>
         )
