@@ -90,7 +90,8 @@ input {
 
 .mappedAlbums {
   border: solid 5px #000000;
-  background-color: #FFFFFF; 
+  background-color: #FFFFFF;
+  height: 400px;
   margin: 20px;
   box-shadow: 0 0 5px #778899;
   transition: all .2s ease-in-out;
