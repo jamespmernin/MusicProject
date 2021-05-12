@@ -81,6 +81,7 @@ input {
 
 .mappedAlbums:hover {
   background-color: #ADD8E6;
+  transform: scale(1.1);
 }
 
 .homeImage {
