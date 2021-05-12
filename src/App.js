@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Route } from 'react-router-dom'
 import axios from 'axios';
 import Albums from './components/Albums'
-import AlbumsDetail from './components/AlbumsDetail'
+// import AlbumsDetail from './components/AlbumsDetail'
 import './App.css'
 
 function App() {
@@ -19,11 +19,9 @@ function App() {
   return (
     <div className="app">
       <nav>The Beatles Discography</nav>
-      <h1>albums</h1>
       <Route exact path="/">
         <Albums albums={albums} />
       </Route>
-      <AlbumsDetail albums={albums} />
     </div>
   )
 }
