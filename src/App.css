@@ -51,6 +51,14 @@ h3 {
   word-wrap: break-word;
 }
 
+h4 {
+  font-size: 24px;
+  font-family: "Kalam", cursive;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
 img {
   height: 250px; /* Setting a height here avoids paintings of unequal size */
   border-bottom: solid 5px #000000;
