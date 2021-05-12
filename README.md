@@ -1,8 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-IMPORTANT NOTE: Cors Anywhere needs to be enabled for this project to display correctly. A link to activate that is found here: https://cors-anywhere.herokuapp.com/corsdemo
-A future release will attempt to find a more permanent solution.
-
 ## Available Scripts
 
 In the project directory, you can run:

@@ -8,7 +8,7 @@ function App() {
   const [albums, setAlbums] = useState([]); // Easier to change album information with a state
   useEffect(() => {
     const getAlbums = async () => {
-      const apiUrl = 'https://cors-anywhere.herokuapp.com/https://itunes.apple.com/lookup?id=136975&entity=album'; // The CORS workaround avoids an issue with accessing the API
+      const apiUrl = 'https://itunes.apple.com/lookup?id=136975&entity=album';
       const res = await axios(apiUrl);
       setAlbums(res.data);
     }
