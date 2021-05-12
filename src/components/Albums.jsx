@@ -10,8 +10,7 @@ function Albums(props) {
           <div key={i} className="mappedAlbums">
             <img src={album.artworkUrl100} alt={album.collectionName} />
             <h2>{album.collectionName}</h2>
-            <h3>{album.artistName}</h3>
-            <h3>{album.releaseDate.substring(0, 4)}</h3>
+            <h3>{album.artistName} ({album.releaseDate.substring(0, 4)})</h3>
           </div>
         )
         }
