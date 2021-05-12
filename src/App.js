@@ -18,7 +18,8 @@ function App() {
 
   return (
     <div className="app">
-      <nav>The Beatles Discography</nav>
+      <nav>Discography Project</nav>
+      <h1>James Mernin</h1>
       <Route exact path="/">
         <Albums albums={albums} />
       </Route>
