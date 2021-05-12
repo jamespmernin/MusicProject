@@ -1,4 +1,4 @@
-// This is what produces each album as its own component on the page.
+// This file is what produces each album as its own component on the page.
 import React, { /*useState*/ } from 'react';
 
 function Albums(props) {
