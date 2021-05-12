@@ -79,6 +79,10 @@ input {
   transition: all .2s ease-in-out;
 }
 
+.mappedAlbums:hover {
+  background-color: #ADD8E6;
+}
+
 .homeImage {
   height: auto;
   max-width: 300px;
