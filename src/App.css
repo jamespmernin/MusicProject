@@ -1,13 +1,9 @@
 html {
-  background-color: #FFDD3C;
+  background-color: #FFDD3C; /* Fills the page with a yellow background */
 }
 
 .App{
   text-align: center;
-}
-
-.app {
-  background-color: #FFDD3C;
 }
 
 nav {
@@ -44,7 +40,7 @@ h1 {
 
 h2 {
   font-size: 18px;
-  height: 57px;
+  height: 57px; /* allows the artist name and date to appear on the same row every time */
   text-align: center;
   max-width: 310px;
   word-wrap: break-word;
@@ -65,7 +61,7 @@ h4 {
 }
 
 img {
-  height: 310px; /* Setting a height here avoids paintings of unequal size */
+  height: 310px; /* Setting a height here avoids album images of unequal size */
   border-bottom: solid 5px #000000;
 }
 
