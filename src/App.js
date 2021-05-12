@@ -19,6 +19,7 @@ function App() {
   return (
     <div className="app">
       <nav>Discography Project</nav>
+      <h1>Featuring my favorite band: The Beatles</h1>
       <h1>James Mernin</h1>
       <Route exact path="/">
         <Albums albums={albums} />
