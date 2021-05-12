@@ -9,9 +9,9 @@ function Albums(props) {
       {props.albums.results.slice(1).map((album, i) => /* Checking data.imgURL not equal to test avoids an error with displaying a bad painting */
           <div key={i} className="mappedAlbums">
             <img src={album.artworkUrl100} alt={album.collectionName} />
-            <h2>Album: {album.collectionName}</h2>
-            <h3>Artist: {album.artistName}</h3>
-            <h3>Year: {album.releaseDate.substring(0, 4)}</h3>
+            <h2>{album.collectionName}</h2>
+            <h3>{album.artistName}</h3>
+            <h3>{album.releaseDate.substring(0, 4)}</h3>
           </div>
         )
         }
