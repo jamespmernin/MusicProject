@@ -8,7 +8,7 @@ function App() {
   const [albums, setAlbums] = useState([]); // Easier to change album information with a state
   useEffect(() => {
     const getAlbums = async () => {
-      const apiUrl = 'https://itunes.apple.com/lookup?id=136975&entity=album';
+      const apiUrl = 'https://itunes.apple.com/lookup?id=136975&entity=album'; // Single Point of Truth for changing the artist displayed
       const res = await axios(apiUrl);
       setAlbums(res.data);
     }
